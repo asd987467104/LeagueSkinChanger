@@ -109,6 +109,7 @@ public:
 std::vector<offset_signature> sigs = {
 	{
 		{
+			"A1 ? ? ? ? 68 ? ? ? ? 8B 70 08",
 			"A1 ? ? ? ? 83 C4 04 C6 40 36 15",
 			"8B 35 ? ? ? ? 68 ? ? ? ? E8 ? ? ? ? 83 C4 04 C7 44 24 ? ? ? ? ? 89 44 24 18",
 			"8B 0D ? ? ? ? FF B0 ? ? ? ? E8 ? ? ? ? A1"
@@ -194,7 +195,7 @@ std::vector<offset_signature> sigs = {
 	},
 	{
 		{
-			"80 BE ? ? ? ? ? 75 50 0F 31 33 C9 66 C7 86 ? ? ? ? ? ? 89 44 24 18"
+			"80 BF ? ? ? ? ? 75 50 0F 31 33 C9 66 C7 87 ? ? ? ? ? ? 89 44 24 18"
 		},
 		false,
 		true,
@@ -224,6 +225,7 @@ std::vector<offset_signature> sigs = {
 	},
 	{
 		{
+			"8A 87 ? ? ? ? 88 4C 24 0B",
 			"8A 87 ? ? ? ? 88 4C 24 0F 33 C9 0F B6 D0 84 C0 74 12",
 			"8A 86 ? ? ? ? 88 4C 24 17",
 			"8A 86 ? ? ? ? 88 4C 24 4C 33 C9 0F B6 D0 84 C0 74 1E",
@@ -286,7 +288,7 @@ std::vector<offset_signature> sigs = {
 		true,
 		false,
 		0,
-		&offsets::functions::GetOwnerObject
+		&offsets::functions::GetGoldRedirectTarget
 	},
 	{
 		{
